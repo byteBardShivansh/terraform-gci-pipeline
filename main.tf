@@ -13,7 +13,7 @@ data "google_compute_image" "ubuntu" {
 
 resource "google_compute_instance" "web_server" {
   name         = "web-server"
-  machine_type = "e2-micro"
+  machine_type = "f1-micro"
   zone         = "us-central1-a"
   boot_disk {
     initialize_params {
